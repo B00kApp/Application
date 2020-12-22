@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Background"
+    android:layoutDirection="rtl"
+    android:orientation="vertical">
+
+    <include layout="@layout/search_background"></include>
+
+
+    <EditText
+        android:id="@+id/search_ED_id"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ed_bg"
+        android:imeOptions="actionDone"
+        android:fontFamily="@font/yekan"
+        android:hint="Search ..."
+        android:layoutDirection="ltr"
+        android:paddingStart="15dp"
+        android:layout_marginLeft="3dp"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:paddingEnd="5dp"
+        android:paddingRight="5dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="18dp"></EditText>
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_search"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/Search_btn_id"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AudioBook"
+        android:textColor="@color/white"
+        android:fontFamily="@font/vazir"
+        android:layout_marginTop="85dp"
+        android:gravity="center"
+        android:id="@+id/txt_AB"
+        android:layout_centerHorizontal="true" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txt_AB"
+        android:layout_margin="4dp"
+        android:id="@+id/BooK_linear_id">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/Rec_Search_Audio_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layoutDirection="ltr">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Story"
+        android:textColor="@color/white"
+        android:fontFamily="@font/vazir"
+        android:gravity="center"
+        android:layout_marginTop="-10dp"
+        android:layout_below="@+id/BooK_linear_id"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txt_S"
+        android:layout_gravity="center_horizontal" />
+
+
+
+    <LinearLayout
+        android:id="@+id/linear_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txt_S"
+        android:layout_margin="4dp"
+        android:orientation="vertical">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/R_Search_ID"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layoutDirection="ltr">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

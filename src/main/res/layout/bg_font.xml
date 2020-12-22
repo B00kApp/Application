@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/REL_FONT"
+    android:background="@color/Background"
+    android:layoutDirection="rtl">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/REL_1"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:id="@+id/f2"
+            android:text="text"
+            android:textColor="@color/white"
+            android:fontFamily="@font/vazir"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/f2"
+            android:gravity="center"
+            android:text="text"
+            android:fontFamily="@font/vazir"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            android:id="@+id/f1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/f3"
+            android:gravity="center"
+            android:text="text"
+            android:fontFamily="@font/vazir"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            android:layout_toStartOf="@id/f2" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/REL_2"
+        android:layout_below="@+id/REL_1"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:id="@+id/f5"
+            android:text="text"
+            android:textColor="@color/white"
+            android:fontFamily="@font/vazir"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/f5"
+            android:gravity="center"
+            android:text="text"
+            android:fontFamily="@font/vazir"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            android:id="@+id/f4"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/f6"
+            android:gravity="center"
+            android:text="text"
+            android:fontFamily="@font/vazir"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            android:layout_toStartOf="@id/f5" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/REL_3"
+        android:layout_below="@+id/REL_2"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:id="@+id/f8"
+            android:text="text"
+            android:textColor="@color/white"
+            android:fontFamily="@font/vazir"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/f8"
+            android:gravity="center"
+            android:text="text"
+            android:fontFamily="@font/vazir"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            android:id="@+id/f7"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/f9"
+            android:gravity="center"
+            android:text="text"
+            android:fontFamily="@font/vazir"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            android:layout_toStartOf="@id/f8" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

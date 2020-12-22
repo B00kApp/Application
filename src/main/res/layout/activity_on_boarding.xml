@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Background"
+    android:layoutDirection="rtl"
+    tools:context=".OnBoarding.OnBoarding">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/kiona"
+        android:text="B00kApp"
+        android:textColor="@color/white"
+        android:textSize="30dp" />
+
+
+    <TextView
+        android:id="@+id/TEXT_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/vazir"
+        android:padding="25dp"
+        android:text="Hi This is Test Text"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+
+    <ImageView
+        android:id="@+id/setting_id"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="71dp"
+        android:src="@drawable/ic_setting" />
+
+    <TextView
+        android:id="@+id/go_to_app_id"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="70dp"
+        android:background="@drawable/btn_bg"
+        android:fontFamily="@font/vazir"
+        android:gravity="center"
+        android:text="Let's Go"
+        android:textColor="@color/black"
+        android:textSize="22dp" />
+
+
+    <!-- ******************************* -->
+    <ImageView
+        android:id="@+id/circle2"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/gray" />
+
+    <ImageView
+        android:id="@+id/circle1"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toEndOf="@+id/circle2"
+        android:src="@drawable/gray" />
+
+
+    <ImageView
+        android:id="@+id/circle3"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toStartOf="@+id/circle2"
+        android:src="@drawable/white" />
+
+</RelativeLayout>

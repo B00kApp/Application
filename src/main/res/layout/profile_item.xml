@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/profile_id"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:layout_margin="2dp"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    app:cardBackgroundColor="@color/Item"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="2dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="74dp"
+            android:layout_height="74dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/circle_bg"
+            android:gravity="center"></LinearLayout>
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/Image_ID"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/name_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="90dp"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/yekan"
+        android:text="اسم بخش"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+
+
+</androidx.cardview.widget.CardView>

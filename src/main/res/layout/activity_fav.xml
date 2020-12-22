@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Background"
+    android:layoutDirection="rtl"
+    tools:context=".UserActivity.Fav">
+
+
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/black"
+        android:layoutDirection="ltr"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="6dp"
+            android:text="Favorites"
+            android:id="@+id/FAV_TXT"
+            android:fontFamily="@font/vazir"
+            android:textColor="@color/white"
+            android:textSize="24dp" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layoutDirection="ltr"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/item_bg"
+        android:layout_marginTop="40dp"
+        android:id="@+id/REL1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            android:text="Audio Book"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="25dp"
+            android:textColor="@color/white"
+            android:textSize="36dp"
+            android:id="@+id/AB_TXT"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="3dp"
+            android:fontFamily="@font/roya"/>
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/headphone"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/REL1"
+        android:layoutDirection="ltr"
+        android:id="@+id/REL2"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/item_bg"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            android:text="Story"
+            android:gravity="center_vertical"
+            android:id="@+id/S_TXT"
+            android:layout_marginLeft="25dp"
+            android:textColor="@color/white"
+            android:textSize="36dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="3dp"
+            android:fontFamily="@font/roya"/>
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/book"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

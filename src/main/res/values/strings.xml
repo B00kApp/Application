@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name"></string>
+    <string name="open">OPEN</string>
+    <string name="close">CLOSE</string>
+
+    <string name="cd_repeat">Repeat one or all</string>
+    <string name="cd_previous">Skip backwards</string>
+    <string name="cd_play">Play and pause</string>
+    <string name="cd_next">Skip forwards</string>
+
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+    </style>
+</resources>

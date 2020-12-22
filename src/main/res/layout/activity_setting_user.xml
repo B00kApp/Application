@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="left"
+    android:background="@color/Background"
+    android:gravity="left"
+    android:layoutDirection="rtl"
+    tools:context=".UserActivity.Setting_Activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/black"
+            android:layoutDirection="ltr"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/SETTING_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="6dp"
+                android:fontFamily="@font/vazir"
+                android:text="Setting"
+                android:textColor="@color/white"
+                android:textSize="24dp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/Language_setting"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@+id/header"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="8dp"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/item_bg"
+            android:fontFamily="@font/vazir"
+            android:gravity="left"
+            android:padding="20dp"
+            android:text="Language"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+
+        <LinearLayout
+            android:id="@+id/LAN_SHOW"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="72dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Language_setting"
+            android:orientation="horizontal">
+
+            <include
+                layout="@layout/setting_lan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/Size_setting"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@+id/lin1"
+            android:layout_margin="8dp"
+            android:background="@drawable/item_bg"
+            android:fontFamily="@font/vazir"
+            android:gravity="left"
+            android:padding="20dp"
+            android:text="Size"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+
+        <LinearLayout
+            android:id="@+id/SIZE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Size_setting"
+            android:orientation="vertical">
+
+            <include layout="@layout/bg_setting_search" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_prograss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/SIZE"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="34dp"
+            android:fontFamily="@font/kiona"
+            android:text="10"
+            android:textColor="@color/white"
+            android:textSize="24dp" />
+
+
+        <TextView
+            android:id="@+id/Font_setting"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@+id/SIZE"
+            android:layout_margin="8dp"
+            android:background="@drawable/item_bg"
+            android:fontFamily="@font/vazir"
+            android:gravity="left"
+            android:padding="20dp"
+            android:text="Font"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+
+        <LinearLayout
+            android:id="@+id/Lin_font"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Font_setting"
+            android:orientation="vertical">
+
+            <include layout="@layout/bg_font" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/FONT_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/Lin_font"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="32dp"
+            android:fontFamily="@font/vazir"
+            android:text="Font"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+        <RelativeLayout
+            android:id="@+id/light_page_setting"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@+id/Lin_font"
+            android:layout_margin="8dp"
+            android:background="@drawable/item_bg"
+            android:fontFamily="@font/vazir"
+            android:gravity="center"
+            android:layoutDirection="ltr"
+            android:padding="20dp"
+            android:text="White"
+            android:textColor="@color/white"
+            android:textSize="22dp">
+
+            <TextView
+                android:id="@+id/WColoe_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="left"
+                android:fontFamily="@font/vazir"
+                android:gravity="left"
+                android:text="White color for text"
+                android:textColor="@color/white"
+                android:textSize="22dp" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/SC_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:shadowColor="@color/Blue" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/background_setting"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@+id/light_page_setting"
+            android:layout_margin="8dp"
+            android:background="@drawable/item_bg"
+            android:fontFamily="@font/vazir"
+            android:gravity="left"
+            android:padding="20dp"
+            android:text="Study Background"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+
+        <LinearLayout
+            android:id="@+id/LIN_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/background_setting">
+
+            <include layout="@layout/bg_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="45dp"
+            android:layout_height="75dp"
+            android:layout_above="@+id/LIN_bg"
+            android:background="@color/black"
+            android:layout_marginRight="19dp"
+            android:id="@+id/showBG"
+            android:layout_marginBottom="11dp"/>
+
+    </RelativeLayout>
+</ScrollView>

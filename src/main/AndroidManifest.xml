@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mahdirahmani8.myapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <permission android:name="android.permission.MEDIA_CONTENT_CONTROL" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/bg"
+        android:label="BookApp"
+        android:roundIcon="@drawable/bg"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".OnBoarding.OnBoarding"></activity>
+        <activity android:name=".OnBoarding.Language_OnB" />
+        <activity android:name=".FavAudioBook" />
+        <activity android:name=".FavBook" />
+        <activity android:name=".UserActivity.Setting_Activity" />
+        <activity android:name=".UserActivity.Star" />
+        <activity android:name=".UserActivity.Follow" />
+        <activity android:name=".UserActivity.Writer" />
+        <activity android:name=".UserActivity.AbouUs" />
+        <activity android:name=".UserActivity.Programmers" />
+        <activity android:name=".UserActivity.Community" />
+        <activity android:name=".UserActivity.Fav" />
+        <activity android:name=".GetAudio" />
+        <activity android:name=".AudioBook" />
+        <activity android:name=".ReciclerActivity" />
+        <activity android:name=".AudioRecicler" />
+        <activity
+            android:name=".LanguageActivity"
+            android:screenOrientation="locked" />
+        <activity android:name=".ContentActivity" />
+        <activity android:name=".AudioBookLanguage" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".Item_Book" />
+        <activity
+            android:name=".MainActivity"
+            android:label="MainActivity"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="locked">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <!-- android:name=".ContentActivity" -->
+            <!-- android:label="your_activity_name" > -->
+            <!-- <meta-data android:name="cheshmakPush" android:value="openActivityOnPush"/> -->
+
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:textDirection="rtl"
+    android:background="@color/Background"
+    android:id="@+id/ID"
+    android:layoutDirection="rtl"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:background="@drawable/top_layer"
+        android:orientation = "vertical" >
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/circle_bg"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/user" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/name_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="6dp"
+            android:fontFamily="@font/yekan"
+            android:gravity="center_horizontal"
+            android:text="نام کاربری"
+            android:textColor="@color/white"
+            android:textSize="22dp"></TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="6dp">
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layoutDirection="rtl"
+                android:layout_marginBottom="5dp">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="33dp"
+                    android:layout_marginBottom="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/pro"
+                    android:id="@+id/pro_id"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/pro_id"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="-50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="38dp"
+                    android:textDirection="ltr"
+                    android:textSize="12dp"
+                    android:text="Programmers"
+                    android:backgroundTint="@color/white"
+                    android:textColorHint="@color/white"
+                    android:fontFamily="@font/vazir"
+                    android:id="@+id/pro_txt_id"/>
+
+                <ImageView
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/community"
+                    android:layout_marginTop="23dp"
+                    android:id="@+id/community_id"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/vazir"
+                    android:textSize="12dp"
+                    android:layout_below="@+id/community_id"
+                    android:id="@+id/community_txt_id"
+                    android:layout_centerHorizontal="true"
+                    android:text="Community"
+                    android:layout_marginTop="2dp"/>
+
+                <ImageView
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:id="@+id/fav_id"
+                    android:layout_marginLeft="50dp"
+                    android:src="@drawable/fav"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginRight="30dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/vazir"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="2dp"
+                    android:text="Favourite"
+                    android:textSize="12dp"
+                    android:layout_below="@+id/fav_id"
+                    android:id="@+id/fav_txt_id"
+                    android:layout_marginRight="43dp"/>
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_below="@id/fav_txt_id"
+                    android:src="@drawable/about"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="28dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/about_us_id"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/vazir"
+                    android:text="About Us"
+                    android:textSize="12dp"
+                    android:id="@+id/about_txt_id"
+                    android:layout_below="@+id/about_us_id"
+                    android:layout_marginRight="43dp"/>
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/community_txt_id"
+                    android:src="@drawable/writer"
+                    android:id="@+id/writer"
+                    android:layout_marginTop="30dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Become a writer  "
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/writer"
+                    android:id="@+id/writer_txt_id"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="12dp"
+                    android:fontFamily="@font/vazir"/>
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/pro_txt_id"
+                    android:src="@drawable/follow"
+                    android:layout_marginTop="42dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/follow_id"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/vazir"
+                    android:layout_below="@id/follow_id"
+                    android:id="@+id/follow_txt_id"
+                    android:text="Follow us"
+                    android:textSize="12dp"
+                    android:layout_marginTop="-4dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="48dp"/>
+
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="85dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_below="@+id/follow_txt_id"
+                    android:src="@drawable/star"
+                    android:id="@+id/star_id"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/star_txt_id"
+                    android:layout_below="@+id/star_id"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="93dp"
+                    android:fontFamily="@font/vazir"
+                    android:textSize="12dp"
+                    android:textColor="@color/white"
+                    android:text="Give a star"/>
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/ic_setting"
+                    android:layout_below="@id/about_us_id"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginRight="80dp"
+                    android:id="@+id/Setting_ID"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/vazir"
+                    android:layout_marginRight="98dp"
+                    android:layout_marginTop="-1dp"
+                    android:id="@+id/setting_txt_id"
+                    android:layout_below="@id/Setting_ID"
+                    android:textSize="12dp"
+                    android:text="Setting"/>
+
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+</LinearLayout>

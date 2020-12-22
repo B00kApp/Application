@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/a"
+    android:id="@+id/BG_Content"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    tools:context=".ContentActivity">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/ABL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0000">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/Top_layer_Content"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/top_layer">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="42dp"
+                android:background="@color/Item">
+
+                <TextView
+                    android:id="@+id/Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="0dp"
+                    android:fontFamily="@font/vazir"
+                    android:gravity="center"
+                    android:text="subject"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"></TextView>
+
+                <!--                <ImageView-->
+                <!--                    android:layout_width="30dp"-->
+                <!--                    android:layout_height="30dp"-->
+                <!--                    android:layout_centerVertical="true"-->
+                <!--                    android:id="@+id/back_id"-->
+                <!--                    android:src="@drawable/back"></ImageView>-->
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <ScrollView
+        android:id="@+id/Scroll_content_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ABL"
+        android:textDirection="rtl">
+
+        <TextView
+            android:id="@+id/disc_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/top_layer"
+            android:layout_margin="6dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="50dp"
+            android:fontFamily="@font/vazir"
+            android:lineSpacingExtra="3dp"
+            android:text="در این قسمت توضیحات مربوط به هر بخش نمایش داده شود"
+            android:textColor="@color/black"
+            android:textSize="25dp"></TextView>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/Dir_FAV">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_id"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="15dp"
+            android:backgroundTint="@color/Red"
+            android:layoutDirection="rtl"
+            android:outlineAmbientShadowColor="@color/black"
+            android:src="@drawable/heart_empty"
+            app:backgroundTint="@color/Red"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    </LinearLayout>
+</RelativeLayout>

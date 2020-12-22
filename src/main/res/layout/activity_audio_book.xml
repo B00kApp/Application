@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layoutDirection="rtl"
+    android:layout_height="match_parent"
+    tools:context=".AudioBook"
+    android:background="@color/black">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:background="@drawable/top_layer"
+        android:id="@+id/top_layer">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="13dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:id="@+id/back_id"
+            android:src="@drawable/back"></ImageView>
+
+        <LinearLayout
+            android:id="@+id/image_bg_id"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="false"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/circle_bg"
+            android:gravity="center">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp">
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_bg_id"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-55dp"
+            android:fontFamily="@font/yekan"
+            android:text=" عنوان"
+            android:textColor="@color/white"
+            android:textSize="17dp"></TextView>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        android:layout_below="@+id/top_layer"
+        android:id="@+id/Source_id"
+        android:background="@color/black"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/vazir"
+        android:layout_marginBottom="3dp"
+        android:text="Source Audio"
+        android:layout_centerVertical="true"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Source_id"
+        android:layout_margin="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/black">
+
+
+        <include layout="@layout/activity_recicler"/>
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="90dp"
+        android:layoutDirection="rtl"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        app:backgroundTint="@color/Red"
+        android:layout_margin="15dp"
+        android:id="@+id/fab_id"
+        android:backgroundTint="@color/Red"
+        android:outlineAmbientShadowColor="@color/black"
+        android:src="@drawable/heart_empty"
+        >
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+
+</RelativeLayout>

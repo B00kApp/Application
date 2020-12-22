@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/Background"
+    android:id="@+id/REL_Setting_Lan"
+    android:layoutDirection="rtl"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/en"
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="5dp"
+            android:src="@drawable/english" />
+
+        <ImageView
+            android:id="@+id/es"
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:layout_margin="5dp"
+            android:layout_toStartOf="@+id/en"
+            android:src="@drawable/spain" />
+
+        <ImageView
+            android:id="@+id/gr"
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:layout_margin="5dp"
+            android:layout_toStartOf="@+id/es"
+            android:src="@drawable/germany" />
+
+        <ImageView
+            android:id="@+id/fa"
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:layout_margin="5dp"
+            android:layout_toStartOf="@+id/gr"
+            android:src="@drawable/iran" />
+
+        <ImageView
+            android:id="@+id/ar"
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:layout_margin="5dp"
+            android:layout_toStartOf="@+id/fa"
+            android:src="@drawable/arabic" />
+
+    </RelativeLayout>
+</RelativeLayout>

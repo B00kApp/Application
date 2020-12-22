@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@drawable/item_bg"
+    android:layout_marginBottom="3dp"
+    android:layout_marginTop="2dp"
+    android:layoutDirection="rtl">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/Blue"
+        android:layout_centerInParent="true"
+        android:textSize="18dp"
+        android:text="Music Name"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/MusicName_noti_id"
+        android:layout_marginTop="25dp"/>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layoutDirection="rtl"
+        android:layout_alignParentLeft="true">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/Play_Npti_id"
+            android:src="@drawable/playing"/>
+
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/btn_dialog"
+        android:layout_margin="5dp"
+        android:id="@+id/Exit_Noti_id"/>
+
+</RelativeLayout>

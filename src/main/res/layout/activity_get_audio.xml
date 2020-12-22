@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layoutDirection="rtl"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    android:background="@color/Background">
+
+    <SeekBar
+        android:id="@+id/SeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Layout"
+        android:layout_marginLeft="10dp"
+        android:layoutDirection="ltr"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="30dp" />
+
+    <TextView
+        android:id="@+id/tv_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/Layout"
+        android:layout_alignParentLeft="true"
+        android:layoutDirection="ltr"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="5dp"
+        tools:text="00:00"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/tv_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/Layout"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25dp"
+        android:layoutDirection="ltr"
+        android:layout_marginBottom="5dp"
+        tools:text="00:00"
+        android:textColor="@color/white" />
+
+
+    <RelativeLayout
+        android:id="@+id/Layout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btn_Play"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_margin="5dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/playing" />
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toStartOf="@+id/btn_Play"
+            android:background="@drawable/next" />
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toEndOf="@+id/btn_Play"
+            android:background="@drawable/past" />
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="180dp"
+        android:background="@drawable/default_album_art" />
+
+    <TextView
+        android:id="@+id/Name_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="قسمت"
+        android:fontFamily="@font/vazir"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+
+        <com.pnikosis.materialishprogress.ProgressWheel
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/Progress_id"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            wheel:matProg_barColor="@color/white"
+            wheel:matProg_progressIndeterminate="true"
+            />
+
+</RelativeLayout>
